@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<title>Phansite</title>
+		<script>
+		fuction banner(){
+			var text=confirm("Did You Really Want to Click on My Banner?"); return text;
+		}
+
+		fuction answer(){
+			var radio=document.getElementsByName("trivia");
+			var selection=false;
+			var message="";
+			for (var i = 0; i <radio.length;i++) {
+				if(radio[i].value=="yes"&&radio[i].checked==true) {
+					selection=true;
+				}//end if statement
+			}//end for loop
+
+			if(selection==true){
+				message=message+"<b><p style='color:yellow'Lookin' cool!</p></b>";
+			} else {
+				message=message+"<b><p style='color:#C00000'>Miss! Try again.</p></b>";
+			}
+				document.getElementById("response").innerHTML=message;
+		} //end function answer
+		</script>
+		<style>
+	
+		</style>
+</head>
+	<footer id="footer"><span id="wrap-text">Marian Zink (Persona series created by Atlus)</span></footer>
+	<body id="background">
+		<a onclick="return banner()" href="http://simplystem.com">
+		<header id="banner"><span id="wrap-text">Phansite</span>
+		</a>
+			<nav>
+				<ul id="navmenu">
+					<li class="navitem">Home</li>
+					<li class="navitem">Characters</li>
+					<li class="navitem">More</li>
+				</ul>
+			</nav>
+		<div class="rightside">
+			<img src="https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher/public/product-images/csm-game/persona5royal-game-poster-image.jpeg?itok=QD6ow50i" />
+		</div>
+		<div class="leftside">
+			<p><i>Take your heart!</i></p>
+		</div>
+		<div class="clearfloat"></div>
+		</header>
+		<h1>Welcome to the official forum for the Phantom Thieves!</h1>
+			<p>Here you can learn all about the <b>Phantom Thieves</b>, the famous anonymous group known for <i>stealing the hearts</i> from nasty adults in Japan! There will be <u>facts and trivia</u> on the group members themselves here, as well as some facts on the group themselves.</p>
+<div class="wrap-list">
+	<o1>
+		<li class="listitem">The Phantom Thieves consists of 7 high schoolers (and a cat)</li>
+		<li class="listitem">Their first mission was in late April, their target was Suguru Kamoshida</li>
+		<li class="listitem">The Phantom Thief leader, presumed to be dead, is alive and well and planning the next heist against politician Masayoshi Shido</li>
+	</o1>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QnDzJ9KzuV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio>
+<div class="wrap-trivia">
+<h2>Phantom Thief Trivia:</h2>
+<p class="paragraph">Which Phantom Thief awakened the persona "Johanna"?
+	<form>
+		<div id="response"></div>
+		<input type="radio" name="trivia" value="no">Noir<br>
+		<input type="radio" name="trivia" value="no">Mona<br>
+		<input type="radio" name="trivia" value="yes">Queen<br>
+		<input type="radio" name="trivia" value="no">Skull<br>
+		<input onclick="answer()" type="button" value="Submit" id="button">
+	</form>
+</div>
+<img src="https://turing.manhattan.edu/~ecuellar01/Homework2/takeyourheart.png" />
+<img src="https://dashgamer.com/wp-content/uploads/2021/02/thumb-1920-987525.jpg" />
+<hr />
+<center>Marian Zink</center>
+</body>
+</html>
